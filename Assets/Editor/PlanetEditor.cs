@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+//Unity editor changes
+
 [CustomEditor(typeof(Planet))]
 public class PlanetEditor : Editor
 {
