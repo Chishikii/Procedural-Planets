@@ -4,13 +4,13 @@ using UnityEngine;
 
 // used to evaluate the noise on a specefic point
  
-public class SimpleNoiseFilter 
+public class SimpleNoiseFilter : INoiseFilter
 {
-    NoiseSettings settings;
+    NoiseSettings.SimpleNoiseSettings settings;
     Noise noise = new Noise();
 
     //constructor
-    public SimpleNoiseFilter(NoiseSettings settings)
+    public SimpleNoiseFilter(NoiseSettings.SimpleNoiseSettings settings)
     {
         this.settings = settings;
     }
